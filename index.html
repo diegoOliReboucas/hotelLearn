@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel</title>
+</head>
+
+<body>
+  <div class="sideNav">
+    <img src="./coruja.webp" alt="">
+    <img src="../CR7Parallax/face.png" alt="">
+    <img src="../CR7Parallax/insta.png" alt="">
+  </div>
+  <header>
+    <div class="menu">
+      <ul>
+        <li>Inicio</li>
+        <li>O Hotel</li>
+        <li>Acomodações</li>
+        <li>Restaurante</li>
+        <li>Eventos</li>
+        <li>Museu Epcar</li>
+        <li>Contato</li>
+        <li>Reservar</li>
+        <li>Serviços Adicionais</li>
+        <li>Loja</li>
+      </ul>
+      <img src="./sacola1.png" alt="">
+    </div>
+    <img class="imgHeader" src="./headerMeio.webp" alt="">
+    <input type="button" value="Reserve Agora">
+  </header>
+
+  <section class="restaurant">
+    <h1 class="h1Format h11">RESTAURANTE</h1>
+    <input class="btnFormat btn11" type="button" value="Ver">
+  </section>
+
+  <section class="bedrooms">
+    <h1 class="h1Format h12">QUARTOS</h1>
+    <input class="btnFormat btn12" type="button" value="Reservar">
+  </section>
+
+  <section class="theHotel">
+    <h1 class="h1Format h13">O HOTEL</h1>
+    <input class="btnFormat btn13" type="button" value="Ver">
+  </section>
+
+  <section class="events">
+    <h1 class="h1Format h14">EVENTOS</h1>
+    <input class="btnFormat btn14" type="button" value="Ver">
+  </section>
+
+  <section class="contact">
+    <h1 class="h1Format h15">CONTATO</h1>
+    <input class="btnFormat btn15" type="button" value="Ver">
+  </section>
+
+  <footer>
+    <p>
+      Receba novidades e promoções. Cadastre seu e-mail aqui.</p>
+    <input type="email" placeholder="Endereço de Email"> <input type="button" value="Cadastre-se">
+    <p>Guaramiranga, Ceará | reservas@valedasnuvens.com.br | (85) 4042-1800</p>
+  </footer>
+
+  <script>
+    const primeiroH1 = document.querySelector('.h11')
+    const primeiraPosicao = primeiroH1.getBoundingClientRect()
+    const segundoH1 = document.querySelector('.h12')
+    const segundaPosicao = segundoH1.getBoundingClientRect()
+    const terceiroH1 = document.querySelector('.h13')
+    const terceiraPosicao = terceiroH1.getBoundingClientRect()
+    const quartoH1 = document.querySelector('.h14')
+    const quartaPosicao = quartoH1.getBoundingClientRect()
+    const quintoH1 = document.querySelector('.h15')
+    const quintaPosicao = quintoH1.getBoundingClientRect()
+
+    const primeiroBTN = document.querySelector('.btn11')
+    const segundoBTN = document.querySelector('.btn12')
+    const terceiroBTN = document.querySelector('.btn13')
+    const quartoBTN = document.querySelector('.btn14')
+    const quintoBTN = document.querySelector('.btn15')
+
+    function adicionarClasse() {
+      if (window.scrollY > (primeiraPosicao.y - 600)) {
+        primeiroH1.classList.add('h1NewFormat')
+        primeiroBTN.classList.add('btnNewFormat')
+      }
+      if (window.scrollY > (segundaPosicao.y - 600)) {
+        segundoH1.classList.add('h1NewFormat')
+        segundoBTN.classList.add('btnNewFormat')
+      }
+      if (window.scrollY > (terceiraPosicao.y - 600)) {
+        terceiroH1.classList.add('h1NewFormat')
+        terceiroBTN.classList.add('btnNewFormat')
+      }
+      if (window.scrollY > (quartaPosicao.y - 600)) {
+        quartoH1.classList.add('h1NewFormat')
+        quartoBTN.classList.add('btnNewFormat')
+      }
+      if (window.scrollY > (quintaPosicao.y - 600)) {
+        quintoH1.classList.add('h1NewFormat')
+        quintoBTN.classList.add('btnNewFormat')
+      }
+    }
+    document.addEventListener('scroll', adicionarClasse)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.sideNav img{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-left: 1190px;
+  position: fixed;
+  cursor: pointer;
+}
+.sideNav img:nth-child(1){
+  margin-top: 200px;
+}
+.sideNav img:nth-child(2){
+  height: 40px;
+  width: 40px;
+  margin-top: 260px;
+  filter: invert(100%);
+}
+.sideNav img:nth-child(3){
+  height: 40px;
+  width: 40px;
+  margin-top: 320px;
+  filter: invert(100%);
+}
+header{
+  width: 100%;
+  height: 750px;
+  background: url(./sacola.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 30px;
+}
+.menu img{
+  width: 40px;
+  height: 40px;
+  margin-right: 200px;
+  margin-top: -20px;
+  position: absolute;
+  top: 45px;
+  left: 1050px;
+  cursor: pointer;
+}
+.menu{
+  display: flex;
+  width: 100%;
+  background: rgb(0, 83, 95);
+  padding: 10px 0px;
+  color: white;
+}
+.menu ul{
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-left: 230px;
+  margin-right: auto;
+}
+.menu ul li:hover{
+  background: rgb(0, 73, 85);
+  margin-top: -8px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.imgHeader{
+  width: 37%;
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-bottom: 50px;
+}
+header input{
+  background: rgb(0, 83, 95);
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  margin-left: -350px;
+}
+header input:hover{
+  background: rgb(43, 104, 156);
+  transition: .5s;
+}
+
+/*Segunda Seção*/
+
+.restaurant{
+  height: 360px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 4rem;
+  background: url(./restaurante.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h1Format{
+  letter-spacing: 25px;
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.h1NewFormat{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 2s;
+}
+.btnFormat{
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.btnFormat:hover{
+  background: rgb(186, 206, 236);
+  border: none;
+  transition: .5s;
+}
+.btnNewFormat{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 4s;
+}
+
+/*Terceira Seção*/
+
+.bedrooms{
+  height: 360px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 4rem;
+  background: url(./quarto.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Quarta Seção*/
+
+.theHotel{
+  height: 360px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 4rem;
+  background: url(./theHotel.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Quinta Seção*/
+
+.events{
+  height: 360px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 4rem;
+  background: url(./event.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Sexta Seção*/
+
+.contact{
+  height: 360px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 4rem;
+  background: url(./contact.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+footer{
+  text-align: center;
+  padding-top: 50px;
+}
+footer p:first-child{
+  color: white;
+  background: rgb(76, 128, 122);
+  width: 450px;
+  padding: 15px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer input:nth-child(2){
+  margin-top: 20px;
+  width: 330px;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  margin-right: 5px;
+}
+footer input:nth-child(3){
+  padding: 10px 20px;
+  background: rgb(186, 218, 85);
+  border: 1px solid rgb(14, 113, 81);
+  color: rgb(14, 113, 81);
+  cursor: pointer;
+}
+footer p:nth-child(4){
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  
+}
